@@ -7,5 +7,18 @@
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
-    border: solid palevioletred 1px;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    color: aliceblue;
 }

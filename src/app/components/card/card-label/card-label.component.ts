@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-label',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-label.component.scss']
 })
 export class CardLabelComponent implements OnInit {
-
+  @Input()
+  gameLabel:string=""
   constructor() { }
 
   ngOnInit(): void {
