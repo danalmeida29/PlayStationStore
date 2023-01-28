@@ -8,6 +8,10 @@ import { CardComponent } from './components/card/card.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CardLabelComponent } from './components/card/card-label/card-label.component';
 import { CardPricingComponent } from './components/card/card-pricing/card-pricing.component';
+import { SharedNavComponent } from './components/menu-bar/shared-nav/shared-nav.component';
+import { SonyBarComponent } from './components/menu-bar/sony-bar/sony-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { CardPricingComponent } from './components/card/card-pricing/card-pricin
     CardComponent,
     MenuBarComponent,
     CardLabelComponent,
-    CardPricingComponent
+    CardPricingComponent,
+    SharedNavComponent,
+    SonyBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
