@@ -12,10 +12,14 @@ import { SharedNavComponent } from './components/menu-bar/shared-nav/shared-nav.
 import { SonyBarComponent } from './components/menu-bar/sony-bar/sony-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { BannerComponent } from './components/banner/banner.component';
+import { BannerLabelComponent } from './components/banner/banner-label/banner-label.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BannerComponent,
+    BannerLabelComponent,
     HomeComponent,
     CardComponent,
     MenuBarComponent,

@@ -1,16 +1,37 @@
 .home__container{
-    width: 90%;
+    width: 100%;
+    min-width: 350px;
     margin: auto;
     padding-top: 50px;
-    display: flex;
-
+    display: grid;
+    grid-template-areas:
+    'banner-top banner-top'
+    'card-jogo card-jogo'
+    'banner-bottom banner-bottom';
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
+    .banner__top{
+        grid-area:banner-top;
+        margin-top: 50px;
+    }
+    .card__jogos{
+        display: flex;
+        grid-area:card-jogo;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .banner{
+        grid-area:banner-bottom;
+        margin-top: 80px;
+    }
 }
 
 .footer{
     width: 90%;
+    min-width: 350px;
     margin: auto;
     padding-top: 50px;
     display: flex;

@@ -1,0 +1,55 @@
+.banner-label__container{
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    position: relative;
+    height: auto;
+    max-height: 500px;
+    background: #fafafa;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-top: -149px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0px 6px 14px 6px rgb(150 150 150 / 27%);
+    .banner-label__titleContent{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 50px;
+        .banner-label__title{
+            font-size: 25px;
+            font-weight: 300;
+            font-family: "Segoe UI";
+            color: black;
+            padding: 10px;
+            .banner-label__content{
+                font-size: 15px;
+                font-weight: 300;
+                font-family: "Segoe UI";
+                color: #5a5a5a;
+                margin-top: 40px;
+            }
+        }
+    }
+    .banner-label__button{
+        display: flex;
+        box-shadow: 0px 0px 0px;
+        background-color: #0072ce;
+        color: white;
+        border-radius: 20px;
+        margin-right: 50px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .banner-label__button:hover{
+        box-shadow: 0px 0px 0px;
+        background-color: #024b86;
+    }
+}
