@@ -1,4 +1,4 @@
-.card__container{
+.card-demo__container{
     position: relative;
     border-radius: 10px;
     width: 200px;
@@ -9,13 +9,14 @@
     margin-top: 20px;
     margin-right: 5px;
     margin-left: 5px;
+
 }
-.card__container:hover{
+.card-demo__container:hover{
     border: 2px solid #004c8a;
     background: rgb(0, 0, 0, 0.8);
 }
 
-.card__img{
+.card-demo__img{
     min-width: 100%;
     min-height: 100%;
     border-radius: 10px;
@@ -23,13 +24,13 @@
     padding: 2px;
     // overflow: hidden;
 }
-.card__img:hover{
+.card-demo__img:hover{
     opacity: 0.9;
     background: white;
     border: white solid 2px;
 }
 
-.card__typeName{
+.card-demo__typeName{
     width: auto;
     display: flex;
     flex-direction: column;
@@ -40,21 +41,20 @@
     font-weight: 500;
     color: dimgrey;
     position: absolute;
-    .card__position{
-        margin-top: 2px;
+    .card-demo__position{
         margin-bottom: -4px;
         margin-left: 1px;
     }
 
-    .card__name{
-        margin-top: 4px;
+    .card-demo__name{
+        margin-top: 3px;
         margin-left: 1px;
         margin-bottom: 0;
         font-size: 16px;
         font-weight: 400;
         color: black;
     }
-    .card__Pricing{
+    .card-demo__Pricing{
         margin-top: 5px;
         margin-bottom: 0;
         margin-left: 1px;

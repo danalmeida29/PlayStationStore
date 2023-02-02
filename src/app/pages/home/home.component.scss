@@ -7,7 +7,8 @@
     grid-template-areas:
     'banner-top banner-top'
     'card-jogo card-jogo'
-    'banner-bottom banner-bottom';
+    'banner__Plus banner__Plus'
+    'banner__Starts banner__Starts';
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
@@ -15,18 +16,94 @@
         grid-area:banner-top;
         margin-top: 50px;
     }
+    .banner__Plus{
+        grid-area:banner__Plus;
+
+    }
+    .banner__Starts{
+        grid-area:banner__Starts;
+    }
     .card__jogos{
         display: flex;
-        grid-area:card-jogo;
+        grid-area: card-jogo;
         justify-content: space-around;
         align-items: baseline;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         margin: auto;
+        flex-direction: column;
+        .card__Posicao{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+            margin-left: 45px;
+            margin-right: 45px;
+            .name__categoria{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+
+                margin-bottom: 2px;
+                padding: 12px;
+                font-size: 28px;
+                font-weight: 100;
+                color: rgb(0 0 0 / 69%);
+
+                font-family: Helvetica, sans-serif;
+                flex-direction: row;
+            }
+            .card__categoria{
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+                flex-wrap: wrap;
+                padding: 0px;
+                flex-direction: row;
+                .ordem{
+                    width: auto;
+                    height: auto;
+                    margin-bottom: 55px;
+                    margin-top: -7px;
+                    margin-left: 3px;
+
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: flex-end;
+                   
+                    .ordem__card-label{
+                        display: flex;
+                        flex-direction: row;
+                        position: absolute;
+                        margin-bottom: 25px;
+                        margin-left: 15px;
+                        .card-label__position{
+                            display: flex;
+                            margin-right: 33px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
-    .banner{
-        grid-area:banner-bottom;
-        margin-top: 80px;
-    }
+    // .banner{
+    //     width: 100%;
+    //     min-width: 350px;
+    //     border: solid darkred 2px;
+    //     display: grid;
+    //     grid-template-areas:
+    //     'banner__Plus banner__Plus'
+    //     'banner__Starts banner__Starts';
+    //     grid-area:banner-bottom;
+
+    //     margin-top: 80px;
+    //     min-width: 350px;
+
+    //     justify-content: space-around;
+    //     align-items: baseline;
+    //     flex-wrap: wrap;
+    // }
 }
 
 .footer{
