@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-card-demo',
-  templateUrl: './card-demo.component.html',
-  styleUrls: ['./card-demo.component.scss']
+  selector: 'app-card-pp',
+  templateUrl: './card-pp.component.html',
+  styleUrls: ['./card-pp.component.scss']
 })
-export class CardDemoComponent implements OnInit {
+export class CardPpComponent implements OnInit {
   @Input()
   gameCover:string = ""
   @Input()
