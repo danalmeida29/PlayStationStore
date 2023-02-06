@@ -1,28 +1,27 @@
 .card-demo__container{
     position: relative;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 306px;
+    height: 306px;
 
     display: flex;
-   // overflow: hidden;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 5px;
     margin-left: 5px;
 
 }
 .card-demo__container:hover{
+    background: rgba(0, 0, 0, 0.863);
+}
+.card-demo__container:active{
     border: 2px solid #004c8a;
-    background: rgb(0, 0, 0, 0.8);
+    border-radius: 10px;
 }
 
 .card-demo__img{
     min-width: 100%;
     min-height: 100%;
     border-radius: 10px;
-    background: white;
-    padding: 2px;
-    // overflow: hidden;
 }
 .card-demo__img:hover{
     opacity: 0.9;
@@ -30,36 +29,4 @@
     border: white solid 2px;
 }
 
-.card-demo__typeName{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    margin-left: 4px;
-    top: 198px;
-    font-size: 10px;
-    font-family: "Roboto";
-    font-weight: 500;
-    color: dimgrey;
-    position: absolute;
-    .card-demo__position{
-        margin-bottom: -4px;
-        margin-left: 1px;
-    }
 
-    .card-demo__name{
-        margin-top: 3px;
-        margin-left: 1px;
-        margin-bottom: 0;
-        font-size: 16px;
-        font-weight: 400;
-        color: black;
-    }
-    .card-demo__Pricing{
-        margin-top: 5px;
-        margin-bottom: 0;
-        margin-left: 1px;
-        font-size: 15px;
-        font-weight: 100;
-        color: #242424;
-    }
-}

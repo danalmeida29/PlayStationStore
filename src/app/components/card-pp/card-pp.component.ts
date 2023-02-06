@@ -8,14 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardPpComponent implements OnInit {
   @Input()
   gameCover:string = ""
-  @Input()
-  gameLabel:string=""
-  @Input()
-  gameDemo:string=""
-  @Input()
-  gameName:string=""
-  @Input()
-  gamePrice:string=""
   constructor() { }
 
   ngOnInit(): void {

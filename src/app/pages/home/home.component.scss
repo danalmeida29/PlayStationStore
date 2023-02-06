@@ -7,8 +7,7 @@
     grid-template-areas:
     'banner-top banner-top'
     'card-jogo card-jogo'
-    'banner__Plus banner__Plus'
-    'banner__Starts banner__Starts';
+    'card__publicidade card__publicidade';
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
@@ -16,12 +15,24 @@
         grid-area:banner-top;
         margin-top: 50px;
     }
-    .banner__Plus{
-        grid-area:banner__Plus;
 
+
+    .card__publicidade{
+        grid-area:card__publicidade;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
     }
-    .banner__Starts{
-        grid-area:banner__Starts;
+    .vejaMais{
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 30px;
     }
     .card__jogos{
         display: flex;
@@ -88,23 +99,6 @@
         }
 
     }
-    // .banner{
-    //     width: 100%;
-    //     min-width: 350px;
-    //     border: solid darkred 2px;
-    //     display: grid;
-    //     grid-template-areas:
-    //     'banner__Plus banner__Plus'
-    //     'banner__Starts banner__Starts';
-    //     grid-area:banner-bottom;
-
-    //     margin-top: 80px;
-    //     min-width: 350px;
-
-    //     justify-content: space-around;
-    //     align-items: baseline;
-    //     flex-wrap: wrap;
-    // }
 }
 
 .footer{
